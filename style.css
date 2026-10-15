@@ -246,9 +246,17 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.skill-icon.html { color: #e34f26; }
-.skill-icon.css { color: #1572b6; }
-.skill-icon.git { color: #f05032; }
+.skill-icon.html {
+    color: #e34f26;
+}
+
+.skill-icon.css {
+    color: #1572b6;
+}
+
+.skill-icon.git {
+    color: #f05032;
+}
 
 /* Proyek */
 .projects {
@@ -286,8 +294,13 @@ nav a:hover {
     font-size: 3rem;
 }
 
-.gradient-1 { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
-.gradient-2 { background: linear-gradient(135deg, #0284c7, #06b6d4); }
+.gradient-1 {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.gradient-2 {
+    background: linear-gradient(135deg, #0284c7, #06b6d4);
+}
 
 .project-info {
     padding: 1.5rem;
@@ -375,16 +388,20 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
     .profile-img {
         width: 200px;
         height: 200px;
     }
+
     .hero h1 {
         font-size: 2.2rem;
     }
+
     .hero-buttons {
         justify-content: center;
     }
+
     .nav-container {
         flex-direction: column;
         gap: 0.8rem;
