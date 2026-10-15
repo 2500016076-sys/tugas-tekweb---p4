@@ -3,58 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pribadi Responsif</title>
+    <title>Portofolio | Ariga Hatan Assegaf</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- 1. Layout Utama Menggunakan CSS Grid -->
-    <div class="grid-container">
 
-        <!-- Header Area -->
-        <header class="header">
-            <div class="logo">Portofolio Saya</div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Tentang</a></li>
-                    <li><a href="#">Portofolio</a></li>
-                    <li><a href="#">Kontak</a></li>
-                </ul>
+    <!-- Header / Navigasi -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Ariga<span>.dev</span></a>
+            <nav>
+                <a href="#about">Bio</a>
+                <a href="#skills">Keahlian</a>
+                <a href="#projects">Proyek</a>
+                <a href="#contact" class="btn-nav">Kontak</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <!-- Konten Utama (Main Area) -->
-        <main class="main-content">
-            <section class="hero">
-                <h1>Selamat Datang di Halaman Web Saya</h1>
-                <p>Halaman ini dirancang responsif menggunakan CSS Grid dan Flexbox.</p>
-            </section>
-
-            <!-- 2. Layout Komponen Menggunakan Flexbox -->
-            <section class="portfolio-section">
-                <h2>Proyek Portofolio</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <h3>Proyek 1</h3>
-                        <p>Desain website e-commerce responsif menggunakan HTML dan CSS.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Proyek 2</h3>
-                        <p>Aplikasi tata letak galeri foto menggunakan CSS Grid.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Proyek 3</h3>
-                        <p>Halaman landing page interaktif dengan Flexbox.</p>
-                    </div>
+    <!-- Hero Section dengan Foto Profil -->
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <div class="profile-image-wrapper">
+                <!-- Foto profil kamu (simpan file foto di folder yang sama dengan nama profile.jpg) -->
+                <img src="profile.jpg" alt="Foto Ariga Hatan Assegaf" class="profile-img">
+            </div>
+            <div class="hero-content">
+                <span class="badge">🎓 Sistem Informasi UAD</span>
+                <h1>Halo, Saya <br><span class="gradient-text">Ariga Hatan Assegaf</span></h1>
+                <p class="subtitle">Mahasiswa Program Studi Sistem Informasi di Universitas Ahmad Dahlan yang berfokus pada Pengembangan Web, Pengelolaan Data, dan Teknologi Informasi.</p>
+                
+                <div class="info-list">
+                    <div class="info-item"><i class="fa-solid fa-user"></i> <strong>Nama:</strong> Ariga Hatan Assegaf</div>
+                    <div class="info-item"><i class="fa-solid fa-id-card"></i> <strong>NIM:</strong> 2500016076</div>
+                    <div class="info-item"><i class="fa-solid fa-book-bookmark"></i> <strong>Prodi:</strong> Sistem Informasi</div>
+                    <div class="info-item"><i class="fa-solid fa-graduation-cap"></i> <strong>Kampus:</strong> Universitas Ahmad Dahlan</div>
                 </div>
-            </section>
-        </main>
 
-        <!-- Footer Area -->
-        <footer class="footer">
-            <p>&copy; 2026 Portofolio Saya. All rights reserved.</p>
-        </footer>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">Lihat Proyek <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn secondary-btn">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- Section Keahlian -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Keahlian & Teknologi</h2>
+        <p class="section-subtitle">Teknologi web dan alat pengembangan yang sedang dipelajari.</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5 skill-icon html"></i>
+                <h3>HTML5</h3>
+                <p>Menyusun struktur halaman web semantik yang rapi dan standar.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt skill-icon css"></i>
+                <h3>CSS3</h3>
+                <p>Desain antarmuka modern menggunakan Flexbox dan CSS Grid.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt skill-icon git"></i>
+                <h3>Git & GitHub</h3>
+                <p>Version control dan publikasi website publik via GitHub Pages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Proyek -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Hasil Tugas & Proyek</h2>
+        <p class="section-subtitle">Kumpulan tugas praktikum mata kuliah Teknologi Web.</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image gradient-1">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Tugas Pertemuan 4</span>
+                    <h3>Deploy Website ke GitHub Pages</h3>
+                    <p>Mengunggah repositori tugas ke GitHub dan mempublikasikan website portofolio interaktif secara online.</p>
+                    <a href="https://github.com/2500016076-sys/tugas-tekweb---p4" target="_blank" class="project-link">Lihat Repositori <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image gradient-2">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Responsif Web</span>
+                    <h3>Desain Portofolio Modern</h3>
+                    <p>Tampilan web yang menyesuaikan secara otomatis saat dibuka di smartphone, tablet, maupun laptop.</p>
+                    <a href="#" class="project-link">Lihat Detail <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Kontak & Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <h2>Mari Terhubung</h2>
+            <p>Silakan hubungi saya melalui GitHub atau email kampus.</p>
+            <div class="social-links">
+                <a href="https://github.com/2500016076-sys" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="mailto:2500016076@webmail.uad.ac.id"><i class="fa-solid fa-envelope"></i> Email UAD</a>
+            </div>
+            <p class="copyright">&copy; 2026 Ariga Hatan Assegaf (2500016076) | Sistem Informasi UAD</p>
+        </div>
+    </footer>
+
 </body>
 </html>
